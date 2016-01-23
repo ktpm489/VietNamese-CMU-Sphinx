@@ -1,0 +1,27 @@
+﻿1. File txt các từ phải có khoảng cách giữa <s> và </s>
+2. File .phone phải có từ SIL và chừa 1 dòng trống.
+3. Tương tự các file khác phải chừa 1 dòng trống.
+
++ Vào thư mục huanluyen\sphinxtrain\etc\ chỉnh các thông số của tập tin sphinx_train.cfg có các giá trị như sau:
+
+$CFG_WAVFILE_TYPE = ‘raw'; # one of nist, mswav, raw
+
+# Feature extraction parameters
+$CFG_WAVFILE_SRATE = 8000.0;
+$CFG_NUM_FILT = 31; # For wideband speech it’s 40, for telephone 8khz reasonable value is 31
+$CFG_LO_FILT = 200; # For telephone 8kHz speech value is 200
+$CFG_HI_FILT = 3500; # For telephone 8kHz speech value is 3500
+
+pocketsphinx_continuous.exe  -hmm hmm  -lm diadiem.lm.DMP  -dict 
+
+text2wfreq < dia_diem_dich_vu.txt | wfreq2vocab > diadiem.vocab
+>text2idngram -vocab diadiem.vocab -idngram diadiem.idngram < diadiem.txt
+>idngram2lm -vocab_type 0 -idngram diadiem.idngram -vocab diadiem.vocab -arpa diadiem.arpa
+>sphinx_lm_convert -i diadiem.arpa -o diadiem.lm.DMP
+
+
+python ../sphinxtrain/scripts/sphinxtrain -t tuvung setup
+python ../sphinxtrain/scripts/sphinxtrain run
+
+pocketsphinx_mdef_convert -text en-us/mdef en-us/mdef.txt
+mk_s2sendump.exe -pocketsphinx yes -moddeffn en-us/mdef.txt -mixwfn en-us/mixture_weights -sendumpfn en-us/sendump
