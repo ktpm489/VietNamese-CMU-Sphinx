@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/car_layout"
+    android:background="@drawable/nen_cute" >
+
+    <!-- <ImageView
+        android:id="@+id/menu_imageBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/imageBackground_desc" /> -->
+    <ImageView
+		android:id="@+id/sun"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:contentDescription="@string/sun"
+		android:paddingLeft="100dp"
+		android:paddingTop="45dp"
+		android:src="@drawable/sun" />
+
+	<ImageView
+		android:id="@+id/cloud1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:contentDescription="@string/cloud"
+		android:paddingLeft="170dp"
+		android:paddingTop="70dp"
+		android:src="@drawable/cloud" />
+
+	<ImageView
+		android:id="@+id/cloud2"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:contentDescription="@string/cloud"
+		android:paddingLeft="200dp"
+		android:paddingTop="90dp"
+		android:src="@drawable/cloud" />
+
+	<!-- <ImageView
+		android:id="@+id/ground"
+		android:layout_width="fill_parent"
+		android:layout_height="200dp"
+		android:layout_alignParentBottom="true"
+		android:contentDescription="@string/ground"
+		android:padding="40dp"
+		android:src="@drawable/ground" />
+
+	<ImageView
+		android:id="@+id/window"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:contentDescription="@string/window"
+		android:src="@drawable/window" /> -->
+
+	<!-- <ImageView
+		android:id="@+id/wheel"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_centerHorizontal="true"
+		android:contentDescription="@string/wheel"
+		android:padding="3dp"
+		android:src="@drawable/steering_wheel" />
+ -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+       <!--   <TextView
+            android:id="@+id/menu_textViewWatchTutorial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/menu_textViewWatchTutorialPadding"
+            android:text="@string/menu_textViewWatchTutorial"
+            android:textColor="#000000" />
+
+        <ImageView
+            android:id="@+id/menu_imageViewLogo"
+            android:layout_width="@dimen/menu_imageViewLogoWidth"
+            android:layout_height="@dimen/menu_imageViewLogoHeight"
+            android:contentDescription="@string/menu_imageViewLogoDesc"
+            android:src="@drawable/logo" /> -->
+
+        <Button
+            android:id="@+id/menu_buttonPlay"
+            android:layout_width="@dimen/menu_buttonWidth"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@drawable/buttonshape"
+            android:shadowColor="#FBB117"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="25"
+            android:text="@string/menu_buttonPlay"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/menu_buttonScores"
+            android:layout_width="@dimen/menu_buttonWidth"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@drawable/buttonshape"
+            android:shadowColor="#FFFC17"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="25"
+            android:text="@string/menu_buttonScores"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/menu_buttonInstructions"
+            android:layout_width="@dimen/menu_buttonWidth"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@drawable/buttonshape"
+            android:shadowColor="#F87431"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="25"
+            android:text="@string/menu_buttonInstructions"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</FrameLayout>

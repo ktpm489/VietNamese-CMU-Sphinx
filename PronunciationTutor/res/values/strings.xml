@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">Bé học chữ số </string>
+    
+    <string name="imageBackground_desc">Backgound Image</string>
+    
+    <!-- Menu -->
+    <string name="menu_imageViewLogoDesc">Pronunciation Tutor Logo</string>
+    <string name="menu_buttonPlay">Chơi</string>
+    <string name="menu_buttonScores">Điểm </string>
+    <string name="menu_buttonInstructions"> Cách chơi </string>
+    <string name="menu_textViewWatchTutorial">Watch Tutorial</string>
+    
+    <!-- Game Mode -->
+    <string name="gamemode_textViewEnterName">Nhập tên bé:</string>
+    <string name="gamemode_buttonEasy">Học Nào Bé </string>
+    <string name="gamemode_buttonNormal">Normal</string>
+    <string name="gamemode_buttonHard">Hard</string>
+    
+    <!-- Scores -->
+    <string name="scores_textViewScore">Số Điểm </string>
+    <string name="scores_buttonClear">Xóa Dữ Liệu </string>
+    <string name="scores_buttonBackToMainMenu">Trở Về Màn Hình Chính</string>
+    
+    <!-- Game -->
+    <string name="game_textViewTriesLeftLbl">Số lần Thử :</string>
+    <string name="game_textViewTriesLeftVal">3</string>
+    <string name="game_imageViewDesc">Hint Image</string>
+    <string name="game_textViewOption1">Option 1</string>
+    <string name="game_textViewOption2">Option 2</string>
+    <string name="game_buttonHint">Hint</string>
+    <string name="game_buttonSkip">Bỏ qua</string>
+    <string name="game_buttonRecord">Ghi Âm</string>
+    
+    <!-- Result -->
+    <string name="result_textViewResult">Kết quả </string>
+    <string name="result_textViewNameLbl">Tên :</string>
+    <string name="result_textViewNameVal">Tên Bé Chơi </string>
+    <string name="result_textViewGameModeLbl">Chế độ :</string>
+    <string name="result_textViewGameModeVal">Dễ </string>
+    <string name="result_buttonSave">Lưu </string>
+    <string name="result_buttonBackToMainMenu">Trở về Menu Chính</string>
+    <string name="result_textViewTotalScoreLbl">Tổng số điểm:</string>
+    <string name="result_textViewTotalScoreVal">0</string>
+    
+    <!-- Iteration Result Dialog -->
+    <string name="iterationresult_textViewWordLbl">Từ:</string>
+    <string name="iterationresult_textViewWordVal">Tên từ</string>
+    <string name="iterationresult_textViewPronunciationVal">Phát âm</string>
+    <string name="iterationresult_imageViewPronounceDesc">Phát âm</string>
+    
+    <!-- Instructions -->
+    <string name="instructions_textViewInstructions">Hướng dẫn</string>
+    <string name="instructions_textViewHowTo">Cách chơi</string>
+    <string name="instructions_buttonPlayNow">Chơi Ngay</string>
+    
+    <!-- Scores Preview -->
+    <string name="scorespreview_textViewTimesPlayed">(Số Lần Chơi)</string>
+    <string name="scorespreview_buttonPrevious">Lùi</string>
+    <string name="scorespreview_buttonNext">Tiến</string>
+    <string name="scorespreview_textViewDateAndTimeVal">Ngày và Thời gian chơi</string>
+    
+    <!-- Video -->
+    <string name="video_textViewVideoTutorialsLbl">Video Tutorials</string>
+    <!--  Animation -->
+	<string name="wheel">Steering Wheel</string>
+	<string name="ground">The Ground</string>
+	<string name="window">Window Frame</string>
+	<string name="sun">The Sun</string>
+	<string name="cloud">A Cloud</string>
+    
+</resources>

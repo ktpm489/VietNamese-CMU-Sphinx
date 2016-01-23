@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/game_screena">
+
+    <ImageView
+        android:id="@+id/result_imageBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/imageBackground_desc" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/scores_textViewScores"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/result_linearLayoutResultTopPadding"
+            android:text="@string/result_textViewResult" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/result_textViewName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/result_textViewNameLbl" />
+
+            <TextView
+                android:id="@+id/result_textViewNameVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/result_textViewNameVal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="@dimen/result_linearLayoutModeBottomPadding" >
+
+            <TextView
+                android:id="@+id/result_textViewGameMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/result_textViewGameModeLbl" />
+
+            <TextView
+                android:id="@+id/result_textViewGameModeVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/result_textViewGameModeVal" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scrollbars="none" >
+
+            <TableLayout
+                android:id="@+id/scores_tableLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:showDividers="end" >
+            </TableLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="@dimen/result_linearLayoutTotalScorePadding" >
+
+            <TextView
+                android:id="@+id/result_textViewTotalScoreLbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/result_textViewTotalScoreLbl" />
+
+            <TextView
+                android:id="@+id/result_textViewTotalScoreVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/result_textViewTotalScoreVal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="@dimen/result_linearLayoutSaveBackPadding"
+            android:paddingTop="@dimen/result_linearLayoutSaveBackPadding" >
+
+            <Button
+                android:id="@+id/scores_buttonClear"
+                android:layout_width="@dimen/global_buttonWidthNormal"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/buttonshape"
+                android:shadowColor="#1CF5FC"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="25"
+                android:text="@string/result_buttonSave"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/scores_buttonBackToMainMenu"
+                android:layout_width="@dimen/global_buttonWidthBackToMenu"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/buttonshape"
+                android:shadowColor="#1CF5FC"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="25"
+                android:text="@string/result_buttonBackToMainMenu"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

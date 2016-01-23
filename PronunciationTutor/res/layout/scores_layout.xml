@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/bg_back">
+
+    <ImageView
+        android:id="@+id/scores_imageBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/imageBackground_desc" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/scores_textViewScores"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/scores_textViewScoresPadding"
+            android:text="@string/scores_textViewScore" />
+
+        <LinearLayout
+            android:layout_width="@dimen/gamemode_linearLayoutNameWidth"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lĩnh Vực Chơi "
+                android:textColor="#FFFFFF" />
+
+            <Spinner
+                android:id="@+id/gamemode_spinnerGradeLevel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scrollbars="none" >
+
+            <TableLayout
+                android:id="@+id/scores_tableLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:showDividers="end" >
+            </TableLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="@dimen/scores_linearLayoutClearBackPadding"
+            android:paddingTop="@dimen/scores_linearLayoutClearBackPadding" >
+
+            <Button
+                android:id="@+id/scores_buttonClear"
+                android:layout_width="@dimen/global_buttonWidthNormal"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/buttonshape"
+                android:shadowColor="#1CF5FC"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="25"
+                android:text="@string/scores_buttonClear"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/scores_buttonBackToMainMenu"
+                android:layout_width="@dimen/global_buttonWidthBackToMenu"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/buttonshape"
+                android:shadowColor="#1CF5FC"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="25"
+                android:text="@string/scores_buttonBackToMainMenu"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

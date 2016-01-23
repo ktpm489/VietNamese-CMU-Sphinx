@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/result" >
+
+    <ImageView
+        android:id="@+id/scorespreview_imageBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/imageBackground_desc" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/result_textViewName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/result_linearLayoutResultTopPadding"
+                android:text="@string/result_textViewNameLbl" />
+
+            <TextView
+                android:id="@+id/result_textViewNameVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/result_linearLayoutResultTopPadding"
+                android:text="@string/result_textViewNameVal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="@dimen/result_linearLayoutModeBottomPadding" >
+
+            <TextView
+                android:id="@+id/result_textViewGameMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/result_textViewGameModeLbl" />
+
+            <TextView
+                android:id="@+id/result_textViewGameModeVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/result_textViewGameModeVal" />
+
+            <TextView
+                android:id="@+id/scorespreview_textViewTimesPlayed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/scorespreview_textViewTimesPlayed" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scrollbars="none" >
+
+            <TableLayout
+                android:id="@+id/scores_tableLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:showDividers="end" >
+            </TableLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="@dimen/result_linearLayoutTotalScorePadding" >
+
+            <TextView
+                android:id="@+id/scorespreview_textViewDateAndTimeVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/scorespreview_textViewDateAndTimeVal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/result_textViewTotalScoreLbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/result_textViewTotalScoreLbl" />
+
+            <TextView
+                android:id="@+id/result_textViewTotalScoreVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/result_textViewTotalScoreVal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="@dimen/result_linearLayoutSaveBackPadding"
+            android:paddingTop="@dimen/result_linearLayoutSaveBackPadding" >
+
+            <Button
+                android:id="@+id/scorespreview_buttonPrevious"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/scorespreview_buttonPrevious" />
+
+            <Button
+                android:id="@+id/scorespreview_buttonNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/scorespreview_buttonNext" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

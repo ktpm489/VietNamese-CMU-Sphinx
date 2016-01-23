@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/bg">
+
+    <ImageView
+        android:id="@+id/gamemode_imageBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/imageBackground_desc" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <CheckBox
+            android:id="@+id/gamemode_checkboxNewUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Người Dùng Mới"
+            android:textColor="#000000" />
+
+        <LinearLayout
+            android:layout_width="@dimen/gamemode_linearLayoutNameWidth"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/gamemode_textViewGradeLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bé Học : "
+                android:textColor="#000000" />
+
+            <Spinner
+                android:id="@+id/gamemode_spinnerGradeLevel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/gamemode_linearLayoutNameWidth"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="@dimen/gamemode_linearLayoutNameBottomPadding" >
+
+            <TextView
+                android:id="@+id/gamemode_textViewEnterName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gamemode_textViewEnterName"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/gamemode_editTextName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#000000"
+                android:textColorHint="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/gamemode_linearLayoutNameWidth"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/gamemode_textViewExistingUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tên Bé Đã Chơi:"
+                android:textColor="#000000" />
+
+            <Spinner
+                android:id="@+id/gamemode_spinnerExistingUsers"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/gamemode_buttonEasy"
+            android:layout_width="@dimen/gamemode_buttonWidth"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@drawable/buttonshape"
+            android:shadowColor="#1CF5FC"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="25"
+            android:text="@string/gamemode_buttonEasy"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+     
+     <!--    <Button
+            android:id="@+id/gamemode_buttonNormal"
+            android:layout_width="@dimen/gamemode_buttonWidth"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@drawable/buttonshape"
+            android:shadowColor="#1CF5FC"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="25"
+            android:text="@string/gamemode_buttonNormal"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/gamemode_buttonHard"
+            android:layout_width="@dimen/gamemode_buttonWidth"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@drawable/buttonshape"
+            android:shadowColor="#1CF5FC"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="25"
+            android:text="@string/gamemode_buttonHard"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />--> 
+
+    </LinearLayout>
+
+</FrameLayout>

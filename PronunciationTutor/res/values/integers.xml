@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- Game -->
+    <integer name="game_maxStar">3</integer>
+    
+</resources>

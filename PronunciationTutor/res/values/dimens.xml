@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- global -->
+    <dimen name="global_buttonWidthNormal">100dp</dimen>
+    <dimen name="global_buttonWidthBackToMenu">200dp</dimen>
+    
+    <!-- Menu -->
+    <dimen name="menu_buttonWidth">150dp</dimen>
+    <dimen name="menu_imageViewLogoWidth">270dp</dimen>
+    <dimen name="menu_imageViewLogoHeight">270dp</dimen>
+    <dimen name="menu_textViewWatchTutorialPadding">10dp</dimen>
+    
+    <!-- Game Mode -->
+    <dimen name="gamemode_linearLayoutNameWidth">200dp</dimen>
+    <dimen name="gamemode_linearLayoutNameBottomPadding">30dp</dimen>
+    <dimen name="gamemode_buttonWidth">100dp</dimen>
+    
+    <!-- Scores -->
+    <dimen name="scores_textViewScoresPadding">20dp</dimen>
+    <dimen name="scores_linearLayoutClearBackPadding">20dp</dimen>
+    
+    <!-- Game -->
+    <dimen name="game_linearLayoutHintSkipPadding">10dp</dimen>
+    <dimen name="game_imageViewHeight">250dp</dimen>
+    <dimen name="game_imageViewWidth">250dp</dimen>
+    <dimen name="game_textViewOptionPadding">30dp</dimen>
+    <dimen name="game_linearLayoutTriesLeftBottomTopPadding">20dp</dimen>
+    <dimen name="game_linearLayoutNameTopPadding">20dp</dimen>
+    <dimen name="game_hintSkipDistance">150dp</dimen>
+    <dimen name="game_imageViewPadding">5dp</dimen>
+    
+    <!-- Result -->
+    <dimen name="result_linearLayoutResultTopPadding">20dp</dimen>
+    <dimen name="result_linearLayoutModeBottomPadding">20dp</dimen>
+    <dimen name="result_linearLayoutSaveBackPadding">20dp</dimen>
+    <dimen name="result_linearLayoutTotalScorePadding">15dp</dimen>
+    
+    <!-- Iteration Result Dialog -->
+    <dimen name="iteration_result_width">225dp</dimen>
+    <dimen name="iteration_result_viewsPadding">5dp</dimen>
+    
+    <!-- Instructions -->
+    <dimen name="instructions_textViewInstructionsPadding">20dp</dimen>
+    <dimen name="instructions_imageViewWidth">200dp</dimen>
+    <dimen name="instructions_imageViewHeight">200dp</dimen>
+    
+    <!-- Video -->
+    <dimen name="video_textViewVideoTutorialsPadding">20dp</dimen>
+    <dimen name="video_spinnerPadding">10dp</dimen>
+    <dimen name="video_videoViewPadding">10dp</dimen>
+    
+</resources>

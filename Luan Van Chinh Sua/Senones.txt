@@ -1,0 +1,5 @@
+ Each cluster will represent a set of similar Markov states, and is called a Senone.
+ 
+ + Feature Extraction
++ (Viterbi Decoder)
+ Each cluster will represent a set of similar Markov states, and is called a Senone.s

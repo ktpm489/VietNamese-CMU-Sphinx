@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/iteration_result_width"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/iteration_result_viewsPadding" >
+
+    <RatingBar
+        android:id="@+id/iterationresult_ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="@integer/game_maxStar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/iteration_result_viewsPadding" >
+
+        <TextView
+            android:id="@+id/iterationresult_textViewWordLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/iterationresult_textViewWordLbl" />
+
+        <TextView
+            android:id="@+id/iterationresult_textViewWordVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/iterationresult_textViewWordVal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/iterationresult_textViewPronunciationVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/iterationresult_textViewPronunciationVal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/iteration_result_viewsPadding" >
+
+        <ImageButton
+            android:id="@+id/iterationresult_buttonPronounce"
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:contentDescription="@string/iterationresult_imageViewPronounceDesc"
+            android:cropToPadding="false"
+            android:scaleType="fitXY"
+            android:src="@drawable/pronounce" />
+
+    </LinearLayout>
+
+</LinearLayout>
